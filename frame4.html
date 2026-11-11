@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Купить билет</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+  <style>
+  .btn-orange { background-color: #fcd34d; color: #000; border: none; border-radius: 4px; }
+        .btn-purple { background-color: #a78bfa; color: #fff; border: none; border-radius: 4px; }
+        body {
+    background-color: #f0f0f0;
+    font-family: Arial;
+}  
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.block {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.kartinka {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartochka {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.kartochka:hover {
+    box-shadow: 0px 0px 10px gray;
+}
+
+.btn-moy {
+    background-color: rgb(108, 35, 190);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-moy:hover {
+    background-color: #5a0099; 
+    color: white;
+}
+.bg-purple {
+    background-color: #8e44ad !important;
+    color: white;
+}
+
+.btn-purple {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #6a0dad;
+    color: white;
+}
+.text-purple {
+    color: #8e44ad !important;
+}  
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid purple;
+    padding-bottom: 5px;
+}
+.karusel-kartinka {
+    height: 500px;
+    object-fit: cover;
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+      <a class="navbar-brand" href="#">МСИ | Музей Современного Исскуства</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="#o-muzee">О музее</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vystavki">Выставки</a></li>
+              <li class="nav-item"><a class="nav-link" href="#faq">Вопросы</a></li>
+              <li class="nav-item"><a class="nav-link" href="#kontakty">Контакты</a></li>
+          </ul>
+          <div class="parent1">
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalBilet"> <a href="frame5.html">
+              Купить билет </a>
+          </button>
+      </div>
+      </div>
+  </div>
+</nav>
+<main class="container py-5">
+  <div class="container mb-4">
+ <div class="text-center mb-4"><p class="eyebrow"></p><h1 class="section-title h2">О выставке</h1><p class="text-secondary mx-auto" style="max-width:650px">Информация</p></div>
+ <div class="row g-4 align-items-center mb-5">
+  <div class="col-md-6"><div class="placeholder-image" style="min-height:230px"><span><img src="vic.png" class="card-img-top kartinka" alt="Выставка 1"></span></div></div>
+  <div class="col-md-6"><h2 class="section-title h4">На вкус и цвет</h2><p class="text-secondary">В галерее для резидентов предусмотрены тематические мастерские с зонами для проведения мастер-классов, лекций, открытых встреч, выставочное пространство. Во времена работы Фабрики-кухни здесь находились заготовочные, куда поступали разные продукты, которые отмывались, очищались, нарезались и в дальнейшем шли на изготовление блюд. Теперь это место предназначено для заготовок идей и непрерывного процесса художественного производства.</p><p class="text-secondary">Выставка была высоко оценена в прочих городах</p> <a class="btn btn-purple px-4" href="frame5.html">Купить билет</a></div>
+ </div>
+ <div class="col-md-6 d-flex gap-2">
+  <div class="ph-text btn-orange w-100"><p style="text-align: center;">До 31 декабря</p> </div>
+  <div class="ph-text btn-white w-100"><p style="text-align: center;">2500 руб.</p></div>
+</div>
+</div>
+ 
+ <div class="block" id="vystavki">
+  <h2 class="section-title h4 mb-3">Посетить другие выставки</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="бэнкси.jpg" class="card-img-top kartinka" alt="Выставка 1">
+              <div class="card-body">
+                  <h5 class="card-title">Стрит-арт Бэнкси</h5>
+                  <p class="card-text">Уличное художество британского художника</p>
+                  <p><span class="badge bg-warning text-dark">до 20 декабря</span></p>
+                  <a href="#" class="btn btn-moy">Подробнее</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="абстракт.img" class="card-img-top kartinka" alt="Выставка 2">
+              <div class="card-body">
+                  <h5 class="card-title">Современная абстракция</h5>
+                  <p class="card-text">Как менялась абстракция с годами</p>
+                  <p><span class="badge bg-warning text-dark">до 19 декабря</span></p>
+                  <a href="#" class="btn btn-moy">Подробнее</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="дидж.jpg" class="card-img-top kartinka" alt="Выставка 3">
+              <div class="card-body">
+                  <h5 class="card-title">Диджитал-арт</h5>
+                  <p class="card-text">Новыая реальность в мире искусства</p>
+                  <p><span class="badge bg-warning text-dark">до 30 ноября</span></p>
+                  <a href="#" class="btn btn-moy">Подробнее</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <h2>Цены на билеты</h2>
+            
+  <ul class="nav nav-tabs" id="vkladkiBilety">
+      <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">Стандарт</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">Студенческий</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">Детский</button>
+      </li>
+  </ul>
+  
+  <div class="tab-content border border-top-0 p-3 bg-white">
+      <div class="tab-pane fade show active" id="tab1">
+          <h4>Взрослый билет — 1000 ₽</h4>
+          <p>Даёт право посетить все залы музея в течение одного дня.</p>
+      </div>
+      <div class="tab-pane fade" id="tab2">
+          <h4>Студенческий билет — 550 ₽</h4>
+          <p>При предъявлении студенческого билета. Действует только по средам.</p>
+      </div>
+      <div class="tab-pane fade" id="tab3">
+          <h4>Детский билет — бесплатно</h4>
+          <p>Для детей до 7 лет в сопровождении взрослого.</p>
+      </div>
+  </div>
+</div>
+</main>
+<div class="footer">
+        <p>© 2026 МСИ </p>
+        <p>
+            <a href="#" class="text-warning">MAX</a> | 
+            <a href="#" class="text-warning">Telegram</a> | 
+            <a href="#" class="text-warning">ВКонтакте</a>
+        </p>
+    </div>
+    <div class="modal fade" id="modalBilet" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Купить билет</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Ваше имя:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email для получения билета:</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Дата посещения:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Тип билета:</label>
+                            <select class="form-select">
+                                <option>Взрослый — 1000 ₽</option>
+                                <option>Студенческий — 550 ₽</option>
+                                <option>Детский — бесплатно</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button class="btn btn-warning">Оплатить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body></html>

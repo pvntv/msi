@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обратная связь — МСИ</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+background-color: #f5f1e9;
+font-family: Arial, sans-serif;
+}
+
+.navbar {
+background-color: #171b28;
+}
+
+.navbar-brand, .nav-link {
+color: white !important;
+}
+
+.form-container {
+max-width: 650px;
+margin: 50px auto;
+background-color: white;
+padding: 35px;
+border: 1px solid #ddd;
+}
+
+h2 {
+border-bottom: 2px solid #7550a5;
+padding-bottom: 10px;
+}
+
+.gold-btn {
+background-color: #e9ad36;
+border: none;
+color: #171b28;
+font-weight: bold;
+}
+
+.gold-btn:hover {
+background-color: #ce9222;
+}
+
+.purple-btn {
+background-color: #8150d8;
+color: white;
+border: none;
+}
+
+.purple-btn:hover {
+background-color: #6336b5;
+color: white;
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">МСИ | Музей Современного Исскуства</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active" href="#o-muzee">О музее</a></li>
+                <li class="nav-item"><a class="nav-link"  href="frame2.html">Выставки</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">Вопросы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakty">Контакты</a></li>
+            </ul>
+            <div class="parent1">
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalBilet"> <a href="frame5.html">
+                Купить билет </a>
+            </button>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+<div class="form-container">
+
+<h2 class="mb-4">Обратная связь для получения чека</h2>
+
+<form>
+
+<div class="mb-4">
+<label class="form-label">Электронная почта</label>
+<input type="email" class="form-control"
+placeholder="example@mail.com" required>
+</div>
+
+<div class="mb-4">
+  <label class="form-label">Номер телефона</label>
+  <input type="email" class="form-control"
+  placeholder="+7(000)000-00-00" required>
+  </div>
+  
+
+<div class="mb-4">
+<label class="form-label"><p style="text-align: center;">Промокод (при наличии)</p> </label>
+<textarea class="form-control" rows="4"
+placeholder="Промокод"></textarea>
+</div>
+
+<div class="d-flex justify-content-between align-items-center">
+
+<button type="reset" class="btn purple-btn px-4">
+Очистить
+</button>
+
+<button type="submit" class="btn gold-btn px-4"> <a href="frame8.html">Отправить</a>
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+:root {
+  --ink: #10101d;
+  --purple: #8150d8;
+  --purple-dark: #6336b5;
+  --gold: #e7a92f;
+  --paper: #f5f3f7;
+  --muted: #777582;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+.site-nav { background: var(--ink); min-height: 58px; }
+.brand-mark { color: #fff; font-weight: 800; letter-spacing: -1px; font-size: 1.35rem; }
+.nav-link { color: #e8e6ed !important; font-size: .82rem; }
+.nav-link:hover { color: var(--gold) !important; }
+.btn-gold { background: var(--gold); color: #171522; border: 0; font-weight: 700; }
+.btn-gold:hover { background: #d9981f; color: #171522; }
+.btn-purple { background: var(--purple); color: #fff; border: 0; }
+.btn-purple:hover { background: var(--purple-dark); color: #fff; }
+.section-title { font-weight: 800; letter-spacing: -.03em; }
+.eyebrow { color: var(--purple); text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; font-weight: 800; }
+.placeholder-image { background: #d9d6df; min-height: 150px; display: grid; place-items: center; color: #777381; border: 1px solid #c9c5d0; }
+.placeholder-image span { font-size: .8rem; font-weight: 700; }
+.product-card, .info-card { border: 1px solid #d9d5df; background: #fff; border-radius: 0; height: 100%; }
+.product-card .placeholder-image { min-height: 115px; }
+.product-card .card-body { padding: .8rem; }
+.product-card h3 { font-size: .85rem; font-weight: 700; }
+.small-label { display: inline-block; background: var(--purple); color: #fff; padding: .18rem .55rem; font-size: .65rem; }
+.site-footer { background: var(--ink); color: #fff; }
+.site-footer a { color: #e9e5f1; text-decoration: none; font-size: .8rem; }
+.form-control, .form-select { border-radius: 0; border-color: #c9c5d0; background: #fff; }
+.form-label { font-size: .8rem; font-weight: 700; }
+.dark-panel { background: var(--ink); color: #fff; }
+.purple-panel { background: #a17be0; color: #fff; }
+.gold-text { color: var(--gold); }
+@media (max-width: 767px) {
+  .site-nav .navbar-collapse { padding: .75rem 0; }
+  .hero-copy { padding: 2rem 1rem !important; }
+}
